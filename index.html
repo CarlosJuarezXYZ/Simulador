@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "estilos.css" rel = "stylesheet">
+    <title>Simuladro de Prestamos</title>
+</head>
+<body>
+
+<h2 class= "titulo"> Simula tus cuotas y descubre cuanto vas a pagar!!!</h2>
+
+<div class="general">
+
+
+<div class="container">
+    <form class="login" id = "formulario">
+        <h2>Coloca tus Datos</h2>
+        <input  class = "nombres" type="name" placeholder="Nombres" id="nombres">
+        <input class = "paterno" type="name" placeholder="Apellido Paterno" id="paterno">
+        <input class = "materno" type="name" placeholder="Apellido Materno" id = "materno">
+        <input class = "DNI" type="name" placeholder="DNI" id="dni">
+        <input class = "genero" type="name" placeholder="Elije tu género" id = "genero">
+        <input class = "celular" type="name" placeholder="Celular" id="celular">
+        <input class = "correo" type="email" placeholder="Correo Electronico" id = "correo">
+        <input  class = "ciudad" type="name" placeholder="Ciudad" id="ciudad"> 
+        <input  class = "distrito" type="name" placeholder="Distrito" id="distrito"> <br>
+
+        
+        <input class = "check1" type="radio" id="autorizo"> 
+        <span><p>
+            Autorizo el manejo de mis datos 
+        </p></span>
+
+        <input class = "check" type="radio" id="no_autorizo"> <p class="autorizo">No autorizo</p>
+        
+        <input type="submit" class="boton" value="Guardar" id="boton">
+
+    </form>
+</div>
+
+<div class="simulador" id = "simulador">
+    <p class="moneda">Moneda</p>
+    <span class = "soles" id = "soles">Soles</span>
+    <div class = "dolares" id = "dolares">Dólares</div> 
+    <p class="SeleccionarMoneda">Seleccione su Moneda</p>
+   
+    <p class = "monto">Monto</p>
+    <input type = "text"  class="cantidad" id="monto" placeholder="Cantidad">
+
+    <p class = "cuotas">Cuotas</p>
+    <input type="text" class="CantidadCuotas" id="cantidad_cuotas" placeholder="N de cuotas">
+
+    <input type="submit" class="simular" id="simular" value="Simular">
+
+    <div class="cuotafinal">
+
+        <p class="cuotafinal_1">Señor carlos su cuota mensual seria:</p>
+        <p class="cuotafinal_2"> S/521.70</p>
+        <p class="tasa_interes"> Tasa de interes = 0.95%</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+    
+
+
+    <script src="simulador.js"> </script>
+
+    
+</body>
+</html>
